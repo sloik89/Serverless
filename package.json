@@ -1,0 +1,14 @@
+{
+  "name": "serverless",
+  "version": "1.0.0",
+  "description": "simple function",
+  "main": "index.js",
+  "scripts": {
+    "netlify": "netlify dev"
+  },
+  "author": "seba",
+  "license": "ISC",
+  "devDependencies": {
+    "netlify-cli": "^12.0.11"
+  }
+}

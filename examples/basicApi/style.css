@@ -1,0 +1,48 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+   min-height: 500px;
+}
+.result{
+    max-width: 1200px;
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+  
+    flex-wrap: wrap;
+
+}
+.result > * {
+   flex-basis: 100%;
+    padding: 1rem;
+    
+  
+}
+.item{
+    display: flex;
+    flex-direction: column;
+ 
+}
+@media screen and (min-width:700px){
+    .result > * {
+        flex-basis: 49.8%;
+       
+    }
+}
+@media screen and (min-width:1200px) {
+    .result>* {
+        flex-basis: 33%;
+       
+    }
+    .item:last-child{
+        border:2px solid black;
+        
+        justify-self: right;
+    }
+}
