@@ -2,7 +2,7 @@ const result = document.querySelector('.result')
 
 const fetchData = async() => {
     try{
-        const {data} =  await axios.get('https://ephemeral-druid-1d95c1.netlify.app/api/basicApi')
+        const {data} =  await axios.get('/api/basicApi')
         console.log(data)
         displayProducts(data)
     }
