@@ -1,4 +1,4 @@
-## Installed Packeg
+## Installed Packeged
 
 npm i netlify-cli --save-dev `install dev dependies `
 
