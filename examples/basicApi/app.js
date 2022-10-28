@@ -2,12 +2,13 @@ const result = document.querySelector('.result')
 
 const fetchData = async() => {
     try{
-        const {data} =  await axios.get('/api/basicApi')
+        const {data} =  await axios.get('https://ephemeral-druid-1d95c1.netlify.app/api/basicApi')
         console.log(data)
         displayProducts(data)
     }
     catch(err){
-        console.log(err.message);
+        result.innerHTML = `<h2> Some error </h2>`
+        console.log(err);
 
     }
 }
